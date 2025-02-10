@@ -8,8 +8,12 @@ Version: 1.3
 :root{
     --white: #f8f8f8;
     --black: #0c0c0c;
+    --primary: ;
 }
-
+*{
+    font-family: "Roboto", serif;
+    font-optical-sizing: auto; 
+}
 body{
     background-color: var(--white);
 }
@@ -18,22 +22,29 @@ body{
     align-items: center;
     justify-content: space-evenly;
 }
-.navbar{
+h1{
+    font-family: "Roboto", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+}
+.franblog {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 16px;
+}
+.navbar {
     display: flex;
-    gap: 30%;
+    justify-content: flex-end;
 }
 .navbar .nav-links {
     list-style: none;
     display: flex;
-    gap: 4rem;
+    gap: 2rem;
+    margin-left: auto;
     font-size: 16px;
-    margin-top: 23px;
+    margin-top: 30px;
 }
-.franblog {
-    font-size: 24px;
-    font-weight: 800;
-    margin-left: 0px;
-}
+
 ul .franblog a {
     text-decoration: none;
     list-style: none;
@@ -42,32 +53,28 @@ ul .franblog a {
 ul .franblog{
     list-style: none;
 }
-.navbar{
-    background-color: #2d2b2b;
-}
-.navbar .nav-links li {
-    transition: transform 0.3s ease;
-    text-decoration: none;
-  }
 .navbar .nav-links a {
     text-decoration: none;
-    color: #121213;
+    color: var(--black);
     font-size: 1rem;
     transition: color 0.3s ease;
   }
 
 .navbar .nav-links li:hover {
-    transform: scale(1.1);
     text-decoration: underline;
+    font-weight: 600;
   }
+  img.imagenintro {
+    height: 351px;
+    border-radius: 4%;
+}
 .posts-card a {
     height: 200px;
     width: 200px;
-    border: 1px solid grey;
+    background-image: url(/wp-content/themes/franperez/images/arcane.jpg);
     border-radius: 12px;
     display: flex;
     align-items: flex-end;
-    background: rgba(140, 147, 150, 0.425);
     justify-content: space-around;
     padding: 8px;
     box-shadow: 12px 11px 38px -7px rgba(0,0,0,0.33);
@@ -104,6 +111,9 @@ ul .franblog{
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
+    font-family: "Roboto", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
 }
 .selfie img{
     border-radius: 12px;
@@ -120,9 +130,71 @@ ul .franblog{
 h1.fran{
     margin-left: 20px;
 }
-.imagecoverfront{
-    background-image: url(/wp-content/themes/franperez/images/Seo-Tecnico-Illustration.jpg);
-    height: 100px;
-
+img.imagenintro {
+    height: 351px;
+    border-radius: 4%;
+    margin-left: 150px;
 }
-
+.button-50 {
+    appearance: button;
+    background-color: #2d2b2b;
+    background-image: none;
+    border: 1px solid #000;
+    border-radius: 4px;
+    box-shadow: #fff 4px 4px 0 0,#000 4px 4px 0 1px;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: ITCAvantGardeStd-Bk,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    margin: 0 5px 10px 0;
+    overflow: visible;
+    padding: 12px 40px;
+    text-align: center;
+    text-transform: none;
+    touch-action: manipulation;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+  }
+  
+  .button-50:active {
+    box-shadow: rgba(0, 0, 0, .125) 0 3px 5px inset;
+    outline: 0;
+  }
+  
+  .button-50:not([disabled]):active {
+    box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
+    transform: translate(2px, 2px);
+  }
+  
+  @media (min-width: 768px) {
+    .button-50 {
+      padding: 12px 50px;
+    }
+  }
+  ul.contactbutton {
+    margin-left: 32px;
+    margin-right: 24px;
+  }
+  section#coverheader {
+    width: 100%;
+    height: 60vh;
+    margin-top: 40px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    gap: 144px;
+  }
+  h2.covertext {
+    font-size: 60px;
+}
+h1{
+    font-size: 60px;
+    color: #2d2b2b;
+    opacity: 50%;
+}

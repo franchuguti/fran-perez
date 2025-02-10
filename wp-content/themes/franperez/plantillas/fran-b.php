@@ -1,9 +1,10 @@
 <?php
  /*
- Template Name: Blog
+ Template Name: Fran Blog
  */
+    include_once __DIR__ . ('/../header.php');
  ?>
- <?php get_header(); ?>
+
 <div class="sobre mi"> <h1 class="fran">BLOG</h1></div>
 <section id="displaytresposts" class="flexcenter">
 <?php

@@ -1,7 +1,8 @@
 <footer>
+    <div class="button-50" onclick="location.href='mailto:hola@franperezg.com';">Say Hi!</div>
+
         <address class="introfooter">
-            <a href="mailto:hola@franperezg.com"> -> Don't be shy and say hi! <- </a><br>
-            London, UK - Spain 
+            Fran Perez © 2025
         </address>
     <?php wp_footer(); ?>
 </footer>
