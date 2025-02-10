@@ -6,19 +6,14 @@
 <h1><?php the_title();?></h1>
     <div class="descorta"><?php the_field( 'descripcion' ); ?> </div>
     <section id="contenido">
-        <?php if (in_category('festivales')){
-           ?>
-         <nav> <!-- Con este condicional podemos mostrar un menu si  estamos en esta categoria-->
-                <ul>
-                    <li><a href="/wp-content/themes/franperez/plantillas/sobremi.php"> Pincha aquí</a></li>
-                </ul>
-           </nav>
-    </section>
-        <?php }
-         else {;}
-
-            echo the_content();
-        ?>
+    <?php if (in_category(array('festivales', 'Seo', 'UI'))){
+?>
+    <div class="infofesti" >
+    <img height="300px" class="aspectfesti" src="<?php the_field( 'imagen_blog' ); ?>" />
+<?php
+    echo 'estas en algo';
+        }
+           ?>   
     </section>
 </div>
 

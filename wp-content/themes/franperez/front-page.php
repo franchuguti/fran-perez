@@ -1,7 +1,11 @@
 <?php
     get_header();
 ?>
-<div class="imagefrontpage"><img src="/wp-content/themes/asdrubal/images/designer.jpg" alt="Designer"></div>
+<section class="introcover">
+    <div class="background">
+        <h1>Fran Perez SEO Técnico</h1>
+    <div>
+</section>
 <div class="frontpage">
 <h1><?php the_title();?></h1>
     <section id="contenido">
@@ -10,6 +14,7 @@
         ?>
     </section>
 <?php
+echo 'ESTO ES LA HOME';
     include $plantillas . 'trespost.php';
     //include 'plantillas/trespost.php'; 
 ?>
