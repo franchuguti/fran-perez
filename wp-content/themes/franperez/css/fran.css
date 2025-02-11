@@ -198,3 +198,12 @@ h1{
     color: #2d2b2b;
     opacity: 50%;
 }
+.image-container {
+    text-align: center;
+}
+.postpage {
+    text-align: center;
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-bottom: 160px;
+}

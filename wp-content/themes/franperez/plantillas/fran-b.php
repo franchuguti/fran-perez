@@ -1,7 +1,5 @@
 <?php
- /*
- Template Name: Fran Blog
- */
+ /* Template Name: dinero */
     include_once __DIR__ . ('/../header.php');
  ?>
 
