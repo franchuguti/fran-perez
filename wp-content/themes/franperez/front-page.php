@@ -4,7 +4,7 @@
 <section id="coverheader">
     <div class="intro-texto">
         <h1 cclass="hintro">Francisco Perez - TECHNICAL SEO 🤖 </h1>
-        <h2 class="covertext">Elevating brands through <br> expert SEO and exceptional Design </h2>
+        <h2 class="covertext">Elevating brands through <br/> expert SEO and exceptional Design </h2>
     </div>
     <div><img class="imagenintro" src="/wp-content/themes/franperez/images/other/seo-cover.svg" title="Ilustración de SEO Técnio" alt="Ilustración de SEO Técnio"></div>
 </section>

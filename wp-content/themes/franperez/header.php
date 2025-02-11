@@ -22,7 +22,7 @@
                     <li><a href="/sobre-mi/">Sobre mi</a></li>
                 </ul>
                 <ul class="contactbutton">
-                     <div class="button-50" onclick="location.href='mailto:hola@franperezg.com';"> Let's chat </div>
+                     <div class="button-50" onclick="location.href='mailto:hola@franperezg.com';">¡Hola! 👋</div>
                 </ul>
             </nav>
         </header>

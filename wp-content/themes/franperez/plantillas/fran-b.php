@@ -1,5 +1,5 @@
 <?php
- /* Template Name: dinero */
+ /* Template Name: franb */
     include_once __DIR__ . ('/../header.php');
  ?>
 
