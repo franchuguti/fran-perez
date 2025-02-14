@@ -14,7 +14,7 @@
         <header>
             <nav class="navbar">
                 <ul class="logo">
-                <li class="franblog"><a href="/">Fran Perez</a></li>
+                <li class="franblog"><a href="/"><img src="/wp-content/themes/franperez/images/other/logofp.svg" height="46px" alt="logotipo Fran Perez SEo Técnico"></a></li>
                 </ul>
                 <ul class="nav-links">
                     <li><a href="/">Inicio</a></li>
