@@ -14,7 +14,7 @@
         <header>
             <nav class="navbar">
                 <ul class="logo">
-                <li class="franblog"><a href="/"><img src="/wp-content/themes/franperez/images/other/logofp.svg" height="46px" alt="logotipo Fran Perez SEo Técnico"></a></li>
+                <li class="franblog"><a href="/"><img src="/wp-content/themes/franperez/images/other/svg/logofp.svg" height="30px" title="Logotipo Fran Perez" alt="logotipo Fran Perez SEO"></li>
                 </ul>
                 <ul class="nav-links">
                     <li><a href="/">Inicio</a></li>
@@ -22,7 +22,7 @@
                     <li><a href="/sobre-mi/">Sobre mi</a></li>
                 </ul>
                 <ul class="contactbutton">
-                     <div class="button-50" onclick="location.href='mailto:hola@franperezg.com';">¡Hola! 👋</div>
+                     <div data-nosnippet class="button-50" onclick="location.href='mailto:hola@franperezg.com';">¡Hola! 👋</div>
                 </ul>
             </nav>
         </header>
