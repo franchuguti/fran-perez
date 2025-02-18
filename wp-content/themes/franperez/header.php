@@ -18,8 +18,8 @@
                 </ul>
                 <ul class="nav-links">
                     <li><a href="/">Inicio</a></li>
-                    <li><a href="/wp-content/themes/franperez/plantillas/blog.php">Blog</a></li>
-                    <li><a href="/sobre-mi/">Sobre mi</a></li>
+                    <li><a href="__DIR__/..//plantillas/blog.php">Blog</a></li>
+                    <li><a href="__DIR__/../plantillas/sobremi.php">Sobre mi</a></li>
                 </ul>
                 <ul class="contactbutton">
                      <div data-nosnippet class="button-50" onclick="location.href='mailto:hola@franperezg.com';">¡Hola! 👋</div>

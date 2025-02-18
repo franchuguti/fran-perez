@@ -1,4 +1,5 @@
 <?php
+
     //include_once __DIR__ . ()'/../header.php');
     get_header();
     /* Template Name: sobre mi */
