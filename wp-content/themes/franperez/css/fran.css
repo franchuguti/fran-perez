@@ -114,6 +114,13 @@ ul .franblog{
     width: 100%;
     min-height: 2em;
 }
+
+section#articulos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
 .posts-name {
     text-align: center;
     color: black;
