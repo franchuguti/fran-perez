@@ -2,18 +2,10 @@
     include_once 'header.php';
     $myblog = array('SEO, uidesign, uxdesign'); 
 ?>
-<section class="categorias">
-            <nav class="navbar"> 
-                <ul class="nav-links-blog">
-                    <li class="etiqueta"><a href="http://fran-perez.test/category/blog/uidesign/">UI Design</li>
-                    <li class="etiqueta"><a href="http://fran-perez.test/category/blog/uxdesign/">UX Design</li>
-                    <li class="etiqueta"><a href="http://fran-perez.test/category/blog/seo/">SEO</a></li>
-                </ul>
-            </nav>
-</section>
 <section id="contenido">
     <div class="postpage">
          <h1 class="titleblog"><?php the_title();?></h1>
+         <h2 class="descorta"><?php the_field('intro'); ?> </h2>
       <div class="infopost">
          <div class="autorfecha">
             <div class="autor">
@@ -31,7 +23,7 @@
                 <?php endif; ?></h4>  
             </div>
         </div>   
-        <h2 class="descorta"><?php the_field('intro'); ?> </h2>
+        
         <div class="image-container">
              <img height="300px" class="imageblog" src="<?php the_field('imagen_cover'); ?>" />
          </div>

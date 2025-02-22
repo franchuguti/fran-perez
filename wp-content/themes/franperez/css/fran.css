@@ -6,47 +6,65 @@ Version: 1.3
 */
 
 :root{
-    --white: #f8f8f8; 
-    --black: #0c0c0c;
+    --white: #f8f8f8;
+    --bakcgorund: #e7e7e7; 
+    --black: #0E1424;
     --prink: #ff1493;
-    --grey100: #cdd0d880;
+    --grey100: #c9c9c9;
+    --grey150: #5c5c5c;
     --grey200:  #2b2b2b;
-    --h1: 36px;
-    --h2: 24px;
-    --h3: 20px;
-    --h4: 16px;
-    --p: 16px;
+    --h1blog: 36px;
+    --h1intro: 46px;
+    --h2: 28px;
+    --h3: 24px;
+    --h4: 20px;
+    --p: 18px;
 }
 *{
-    font-family: "Roboto", serif;
-    font-optical-sizing: auto; 
+    font-family: "Montserrat Alternates", serif;
 }
-h1{
-    font-family: "Roboto", serif;
-    font-optical-sizing: auto;
+
+h1 {
     font-weight: 400;
-    font-size: var(--h1);
+    font-size: var(--h1blog);
 }
+
 h2{
     font-size: var(--h2);
     font-weight: 400;
+
 }
 h3{
     font-weight: 400;
     font-size: var(--h3);
 }
-body{
-    background-color: var(--white);
+
+P{ 
+   font-weight: 400; 
+   font-size: var(--p);
 }
+
+body{
+    background-color: var(--bakcgorund);
+}
+
 .flexcenter {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+    display: grid;
+	grid-gap: 16px;
+
 }
 .navbar {
     display: flex;
-    justify-content: flex-end;
-    margin-right: 34px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: var(--bakcgorund);
+    padding: 10px 20px;
+    position: fixed;
 }
 .navbar .nav-links {
     list-style: none;
@@ -54,7 +72,10 @@ body{
     gap: 2rem;
     margin-left: auto;
     font-size: 16px;
-    margin-top: 30px;
+    margin-top: 20px;
+}
+ul.contactbutton {
+    margin-right: 100px;
 }
 
 ul .franblog a {
@@ -136,10 +157,12 @@ section#articulos {
     display: block;
     border-radius: 8px;
 }
-.postpage{ 
-    margin-left: 50px; 
+.postpage {
+    text-align: center;
+    margin-left: 250px;
+    margin-right: 250px;
+    margin-bottom: 100px;
 }
-
 .selfie img{
     border-radius: 12px;
 }
@@ -152,32 +175,25 @@ section#articulos {
     margin-left: 20px;
     margin-right: 50%;    
 }
-h1.fran{
-    margin-left: 20px;
-}
+
 img.imagenintro {
     height: 351px;
     border-radius: 4%;
     margin-left: 150px;
 }
-.button-50 {
+.button-50     {
     appearance: button;
     background-color: var(--grey200);
     background-image: none;
-    border: 1px solid #000;
-    border-radius: 4px;
-    box-shadow: #fff 4px 4px 0 0,#000 4px 4px 0 1px;
+    box-shadow: #fff 4px 4px 0 0, #000 4px 4px 0 1px;
     box-sizing: border-box;
     color: #fff;
     cursor: pointer;
     display: inline-block;
-    font-family: "Roboto",serif;
+    font-family: "Roboto", serif;
     font-size: 16px;
     font-weight: 400;
-    line-height: 20px;
-    margin: 0 5px 0px 0px;
     overflow: visible;
-    padding: 8px 10px;
     text-align: center;
     text-transform: none;
     touch-action: manipulation;
@@ -185,7 +201,7 @@ img.imagenintro {
     -webkit-user-select: none;
     vertical-align: middle;
     white-space: nowrap;
-  }
+}
   
   .button-50:active {
     box-shadow: rgba(0, 0, 0, .125) 0 3px 5px inset;
@@ -197,25 +213,34 @@ img.imagenintro {
     transform: translate(2px, 2px);
   }
   
-  @media (min-width: 768px) {
+  @media (min-width: 1200px) {
     .button-50 {
       padding: 12px 50px;
     }
   }
   section#coverheader {
-    width: 100%;
-    height: 60vh;
-    margin-top: 40px;
-    margin-left: 20px;
-    display: flex;
-    align-items: center;
-    gap: 144px;
-  }
-  h2.covertext {
-    font-size: var(--h2)
+        width: 100%;
+        height: 60vh;
+        margin-top: 160px;
+        display: flex;
+        align-items: center;
+        gap: 60px;
+        justify-content: left;
+        flex-direction: column;
+    }
+  .intro-texto {
+    width: 60%;
+    margin-left: 52px;
 }
+
+h2.covertext {
+    margin-top: -52px;
+    font-size: var(--h2);
+    text-align:start;
+}
+
 h1.titleblog{
-    font-size: var(--h1);
+    font-size: 48px;
     font-weight: 600;
     color: #0e0d0d;
     opacity: 80%;
@@ -230,13 +255,15 @@ h1.titleblog{
     margin-bottom: 100px;
 }
 section#contenido {
-    margin: 40px;
-    margin-left: 184px;
-    margin-right:184px;
-}
+        margin: 40px;
+        margin-top: 100px;
+        margin-left: 184px;
+        margin-right: 184px;
+    }
 
 h2.descorta {
-    font-weight: 600;
+    font-weight: 400;
+    margin-top:66px;
     color: var(--grey200);
 }
 
@@ -266,7 +293,6 @@ section.categorias {
     align-items: flex-end;
     margin-top: 32px;
 }
-
 h3.cat{
     font-size: var(--h3);
 }
@@ -321,14 +347,41 @@ dl a:hover {
     margin: 0px 200px 32px;
     align-content: center;
     align-items: center;
-    flex-direction: row-reverse;
 }
 section.sobremi {
-    background-color: var(--grey100);
+    background-color: var(--grey200);
     width: 100%;
-    height: 100vh;
-    border-radius: 20px;
+    height: 50vh;
 }
+
+.servicios{ 
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    gap: 4rem;
+    margin: 0px 200px 32px;
+    align-content: center;
+    align-items: center;
+    }
+
+p.aboutmetext {
+    margin-left: 60px;
+    margin-right: 60px;
+}
+section.sobremi p{
+        color: var(--white)
+}
+
+section.sobremi h2{
+    color: var(--white);
+    margin-top: 0px;
+    text-align: center;
+}
+
+.hintro{
+    margin-bottom: 0;
+}
+
 #coverheader{
     width: 100%;
     height: 100vh;
@@ -359,6 +412,8 @@ h4.categoria a {
     font-size: 12px;
     font-weight: 200;
     transition: color 0.3s ease;
+    display: flex
+;
 }
 
 h4.categoria:hover {
@@ -372,4 +427,82 @@ h4.autorpost {
 }
 h4.date {
     font-weight: 200;
+}
+.sobremi {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+section#displaytresposts {
+    margin-top: 180px;
+}
+
+@media (max-width: 1200px) {
+    .flexcenter,
+    .navbar,
+    .navbar .nav-links,
+    section#articulos,
+    .selfie,
+    section.categorias,
+    .aboutmeintro,
+    .servicios,
+    .infopost,
+    .row {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .navbar {
+        position: static;
+    }
+
+    .navbar .nav-links {
+        gap: 1rem;
+        margin-left: 0;
+        flex-wrap: wrap;
+    }
+
+    ul.contactbutton {
+        margin-right: 0;
+    }
+
+    .posts-card a {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .imagefrontpage img,
+    img.imagenintro {
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
+
+    .intro-texto {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    section#contenido, 
+    .postpage {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .aboutmeintro, 
+    .servicios {
+        margin: 0px 20px 32px;
+        gap: 2rem;
+    }
+
+    .infopost {
+        margin-top: 32px;
+    }
+
+    .autorfecha {
+        gap: 10px;
+        justify-content: center;
+    }
 }
