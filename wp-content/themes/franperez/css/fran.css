@@ -6,10 +6,10 @@ Version: 1.3
 */
 
 :root{
-    --white: #f8f8f8;
-    --bakcgorund: #e7e7e7; 
-    --black: #0E1424;
+    --white: #f2f2f2;
+    --black: #01040B;
     --prink: #ff1493;
+    --background: #f8f8f8;
     --grey100: #c9c9c9;
     --grey150: #5c5c5c;
     --grey200:  #2b2b2b;
@@ -21,7 +21,11 @@ Version: 1.3
     --p: 18px;
 }
 *{
-    font-family: "Montserrat Alternates", serif;
+    font-family: "Roboto", serif;
+    margin: 0;
+}
+body{
+    background-color: var(--background);
 }
 
 h1 {
@@ -38,14 +42,18 @@ h3{
     font-weight: 400;
     font-size: var(--h3);
 }
+h4{
+    font-weight: 400;
+}
 
 P{ 
    font-weight: 400; 
    font-size: var(--p);
 }
 
-body{
-    background-color: var(--bakcgorund);
+
+.me:hover{
+    cursor: url(/wp-content/themes/franperez/images/other/SVG/logofp.svg), auto;
 }
 
 .flexcenter {
@@ -62,17 +70,17 @@ body{
     left: 0;
     right: 0;
     z-index: 1000;
-    background-color: var(--bakcgorund);
     padding: 10px 20px;
     position: fixed;
 }
 .navbar .nav-links {
     list-style: none;
     display: flex;
+    font-weight: 800;
     gap: 2rem;
     margin-left: auto;
     font-size: 16px;
-    margin-top: 20px;
+    width: 30%;
 }
 ul.contactbutton {
     margin-right: 100px;
@@ -97,7 +105,6 @@ ul .franblog{
 
 .navbar .nav-links li:hover {
     text-decoration: underline;
-    font-weight: 600;
   }
   .navbar .nav-links-blog a {
     text-decoration: none;
@@ -107,8 +114,6 @@ ul .franblog{
    }
   .navbar .nav-links-blog li:hover {
     text-decoration: none;
-    background-color: var(--grey100);
-    color: var(--white);
   }
   li.etiqueta {
     border: 1px solid black;
@@ -188,7 +193,6 @@ img.imagenintro {
     box-shadow: #fff 4px 4px 0 0, #000 4px 4px 0 1px;
     box-sizing: border-box;
     color: #fff;
-    cursor: pointer;
     display: inline-block;
     font-family: "Roboto", serif;
     font-size: 16px;
@@ -202,16 +206,13 @@ img.imagenintro {
     vertical-align: middle;
     white-space: nowrap;
 }
+
   
-  .button-50:active {
-    box-shadow: rgba(0, 0, 0, .125) 0 3px 5px inset;
-    outline: 0;
-  }
-  
-  .button-50:not([disabled]):active {
-    box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
-    transform: translate(2px, 2px);
-  }
+  @media (min-width: 768px) {
+    .button-54 {
+      padding: 0.25em 0.75em;
+    }
+  }  
   
   @media (min-width: 1200px) {
     .button-50 {
@@ -220,10 +221,13 @@ img.imagenintro {
   }
   section#coverheader {
         width: 100%;
-        height: 60vh;
-        margin-top: 160px;
+        height: 50vh;
+        margin-top: 140px;
+        padding-top: 40px;
+        width: 100%;
         display: flex;
         align-items: center;
+        color: var(--black);
         gap: 60px;
         justify-content: left;
         flex-direction: column;
@@ -231,6 +235,17 @@ img.imagenintro {
   .intro-texto {
     width: 60%;
     margin-left: 52px;
+}
+.remoto {
+    display: flex;
+    justify-content: flex-end;
+    width: 81%;
+}
+
+.scroll{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
 }
 
 h2.covertext {
@@ -304,6 +319,7 @@ h3.cat{
     flex-wrap: wrap;
     margin-left: 16px;
     margin-right: 16px;
+    margin-bottom: 10px;
 }
 dl a{
     align-items: flex-end;
@@ -349,32 +365,86 @@ dl a:hover {
     align-items: center;
 }
 section.sobremi {
-    background-color: var(--grey200);
     width: 100%;
     height: 50vh;
 }
-
-.servicios{ 
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: nowrap;
-    gap: 4rem;
-    margin: 0px 200px 32px;
-    align-content: center;
-    align-items: center;
-    }
 
 p.aboutmetext {
     margin-left: 60px;
     margin-right: 60px;
 }
 section.sobremi p{
-        color: var(--white)
+        color: var(--black)
 }
 
+img.yo {
+    border: 2px solid;
+    border-radius: 177px;
+}
+
+section.servicios{
+    
+    background-color: var(--black);
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    color: var(--background);
+    gap: 4rem;
+    align-content: center;
+    align-items: center;
+    }
+
 section.sobremi h2{
-    color: var(--white);
+    color: var(--black);
+    -webkit-text-fill-color: var(--white);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--black);
     margin-top: 0px;
+    font-size: 120px;
+}
+section.servicios h2{
+    color: var(--background);
+    margin-top: 0px;
+    font-size: 120px;
+    text-align: center;
+}
+section.servicios p{
+    color: var(--background);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    align-items: center;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+section.uiux h2{
+    color: var(--black);
+    margin-top: 0px;
+    font-size: 120px;
+}
+
+section.sobremipage h1{
+    color: var(--black);
+    -webkit-text-fill-color: var(--white);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--black);
+    margin-top: 120px;
+    font-size: 100px;
+    text-align: center;
+}
+
+.visualgrid{
+    grid-row-gap: 16px;
+    grid-column-gap: 16px;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    display: grid;
+}
+
+section.sobremipage {
+    margin-top: 120px;
+    margin-bottom: 80px;
     text-align: center;
 }
 

@@ -34,14 +34,3 @@
 
 <?php include_once 'footer.php'; ?>
 
-
-
---------
-
-
-<?php $categoria = get_field( 'categoria' ); ?>
-<?php $term = get_term_by( 'id', $categoria, 'category' ); ?>
-<?php if ( $term ) : ?>
-	<a href="<?php echo esc_url( get_term_link( $categoria ) ); ?>"><?php echo esc_html( $categoria->name ); ?></a>
-<?php endif; ?>
-
