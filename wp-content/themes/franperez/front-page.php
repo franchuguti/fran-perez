@@ -46,27 +46,6 @@
 <section class="uiux">
 <div class="cardtext">
     <h2>✱My visual feed✱</h2>
-    <div class="visualgrid">
-        <div class="grid1">
-            <img src="/wp-content/themes/franperez/images/other/portrait.webp" height="300px" alt="">
-        </div>
-        <div class="grid1">
-        <img src="/wp-content/themes/franperez/images/other/portrait.webp" height="300px" alt="">
-        </div>
-        <div class="grid1">
-        <img src="/wp-content/themes/franperez/images/other/portrait.webp" height="300px" alt="">
-        </div>
-        <div class="grid1">
-        <img src="/wp-content/themes/franperez/images/other/portrait.webp" height="300px" alt="">
-        </div>
-        <div class="grid1">
-        <img src="/wp-content/themes/franperez/images/other/portrait.webp" height="300px" alt="">
-        </div>
-        <div class="grid1">
-
-        </div>
-    </div>
-
     
 </section>
 

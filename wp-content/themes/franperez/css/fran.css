@@ -432,16 +432,6 @@ section.sobremipage h1{
     font-size: 100px;
     text-align: center;
 }
-
-.visualgrid{
-    grid-row-gap: 16px;
-    grid-column-gap: 16px;
-    grid-template-rows: auto auto;
-    grid-template-columns: 1fr 1fr;
-    grid-auto-columns: 1fr;
-    display: grid;
-}
-
 section.sobremipage {
     margin-top: 120px;
     margin-bottom: 80px;
